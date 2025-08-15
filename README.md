@@ -66,6 +66,10 @@ the wheel is verified
 
 ### 5. Install Wheel
 
+On certain machines we have to make sure we have the appropriate python version (e.g. carpenter: ```bash module load cray-python```
+
 ```bash
 pip install --user ./lst_tools-0.1.17-py3-none-any.whl
 ```
+
+
