@@ -27,7 +27,17 @@ example:
 ssh-keygen -t ed25519 -C "john@doe.com" -f ~/.ssh/ssh_github_hpc
 ```
 
-### 2. Clone this repository
+After running the commands above you should see a keypair; one private and one public key (with the ending .pub)
+
+### 2. Add the public key to the authorized keys on github
+Go to your github profile settings
+Go to ssh and GPG keys
+Click on new ssh key
+Set the key title; e.g. ssh_{machine_name}
+drop the public key (contents of the .pub key) in the key field
+click on add ssh key
+
+### 3. Clone this repository
 ```bash
 git clone git@github.com:uahypersonics/lst_tools-releases.git
 cd lst_tools-releases
