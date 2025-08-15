@@ -51,3 +51,21 @@ Host github.com
 git clone git@github.com:uahypersonics/lst_tools-releases.git
 cd lst_tools-releases
 ```
+
+### 4. Verify wheel using sha256 sum
+```bash
+sha256sum -c lst_tools-0.1.17-py3-none-any.whl.sha256
+```
+
+If the terminal shows
+```bash
+lst_tools-0.1.17-py3-none-any.whl: OK
+```
+
+the wheel is verified
+
+### 5. Install Wheel
+
+```bash
+pip install --user ./lst_tools-0.1.17-py3-none-any.whl
+```
