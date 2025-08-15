@@ -10,10 +10,25 @@ Access to this repository is restricted; redistribution outside authorized users
 These wheels are for internal distribution only.
 
 You will need:
-- Access to this private repository.
-- Internet access on your HPC login node
+- Access to this private repository
+- set up an ssh keypair to authenticate with github
 
-### 1. Clone this repository
+### 1. Set up ssh keypair
+on the remote machine go to the .ssh directory
+```bash
+cd ~/.ssh
+```
+set up the ssh-keypair and give it a descriptive name to use for github
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/ssh_key_name
+```
+example:
+```bash
+ssh-keygen -t ed25519 -C "john@doe.com" -f ~/.ssh/ssh_github_hpc
+```
+
+### 2. Clone this repository
 ```bash
 git clone git@github.com:uahypersonics/lst_tools-releases.git
 cd lst_tools-releases
+```
