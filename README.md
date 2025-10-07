@@ -12,3 +12,14 @@ curl -LO https://github.com/uahypersonics/lst_tools-releases/releases/latest/dow
 
 ## 2. Install the python wheel
 
+```bash
+pip install --user lst_tools-1.0.5-py3-none-any.whl
+```
+
+# Uninstall lst-tools
+
+To uninstall the lst-tools run the following command
+
+```bash
+pip uninstall lst_tools
+```
